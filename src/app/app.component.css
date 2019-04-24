@@ -174,34 +174,34 @@
 
 /*    header    */
 
-header{
+header {
   width: 100%;
-  height: 110px;
+  /* height: 110px; */
   background: #fff;
   overflow: hidden;
 }
 
-header .logo{
+header .logo {
   float: left;
   margin-top: 40px;
 }
 
-header nav{
+header nav {
   float: right;
 }
 
-header nav ul{
+header nav ul {
   list-style: none;
   margin-top: 50px;
 }
 
-header nav ul li{
+header nav ul li {
   display: block;
   float: left;
   margin-left: 50px;
 }
 
-header nav ul li a{
+header nav ul li a {
   text-decoration: none;
   color: #3b3b3b;
   font-family: "aleo-regular", arial;
@@ -212,7 +212,7 @@ header nav ul li a{
 }
 
 header nav ul li a.active,
-header nav ul li a:hover{
+header nav ul li a:hover {
   color: #B31B18;
   border-bottom: 2px solid #B31B18;
 }
@@ -223,76 +223,44 @@ header nav ul li a:hover{
 
 /*    hero    */
 
-.hero{
-  width: auto;
-  height: 400px;
-  position: relative;
-  background: url('../assets/img/hero.jpg') no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-}
-
-.hero a img {
-
-  position: absolute;
+body, html {
   height: 100%;
-
 }
 
-.hero .caption{
-  text-align: center;
-  margin-top: 5%;
-  height:15%;
-  width:15%;
+/* The hero image */
+.hero-image {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/hero.jpg");
+height: 30em;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
 }
 
-.hero .caption h3{
-  color: #fff;
-  font-family: "aleo-regular", arial;
-font-style:uppercase;
-background-color: #B31B18;
-  font-size: 100px;
-  letter-spacing: -2px;
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
+.bg-image {  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
-.hero .caption h4{
-  color: #fff;
-  font-family: "aleo-regular", arial;
-  font-size: 16px;
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  margin: 29px 0 0 0;
-  padding: 0;
-  font-weight: normal;
+.hero-text {
+text-align: center;
+position: relative;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
 }
 
-.hero .caption .rsep,
-.hero .caption .lsep{
-  width: 40px;
-  height: 1px;
-  display: inline-block;
-  background-color: #fff;
-  vertical-align: middle;
+.hero-text h1 {
+  font-size: 9vw;
+  color: #FFF;
+  background-color: #B31B18;
 }
 
-.hero .caption .rsep{
-  margin-right: 20px;
+.hero-text h4 {
+  font-size: 3vw;
+  color: #FFF;
 }
-.hero .caption .lsep{
-  margin-left: 20px;
-}
-
-
 
 
 
@@ -302,7 +270,6 @@ background-color: #B31B18;
   width: 100%;
   overflow: hidden;
   border-top: 4px solid #B31B18;
-  padding-bottom: 100px;
 }
 
 .menu .menu_title{
@@ -464,12 +431,12 @@ background-color: #B31B18;
   margin-bottom: 80px;
 }
 
-.info .title{
+.info .title {
   float: left;
   position: relative;
 }
 
-.info .title h3{
+.info .title h3 {
   color: #3b3b3b;
   font-family: "aleo-bold", arial;
   font-size: 20px;
@@ -478,7 +445,7 @@ background-color: #B31B18;
   margin: 0;
 }
 
-.info .title .separator{
+.info .title .separator {
   position: absolute;
   width: 200px;
   height: 1px;
@@ -486,20 +453,20 @@ background-color: #B31B18;
   top: 10px;
   right: -220px;
 }
-.featured_dishes{
+.featured_dishes {
   padding: 100px 0;
   overflow: hidden;
 }
 
-.caroufredsel_wrapper{
+.caroufredsel_wrapper {
   width: 100%!important;
 }
 
-.featured_dishes .slider_nav{
+.featured_dishes .slider_nav {
   float: right;
 }
 
-.featured_dishes .slider_nav a{
+.featured_dishes .slider_nav a {
   display: block;
   width: 9px;
   height: 9px;
@@ -572,7 +539,7 @@ background-color: #B31B18;
 
 /*    gallery    */
 .gallery{
-  padding: 100px 0;
+
   overflow: hidden;
 }
 
@@ -621,8 +588,6 @@ background-color: #B31B18;
 /*    footer    */
 footer{
   width: 100%;
-  margin-top: 100px;
-  padding: 100px 0;
   background: #3b3b3b;
   overflow: hidden;
 }
